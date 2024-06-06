@@ -34,6 +34,7 @@
 - name: Gather the package facts
   package_facts:
     manager: apt
+  no_log: true
 
 - name: (Debian) Unhold GitLab Runner version
   changed_when: false
